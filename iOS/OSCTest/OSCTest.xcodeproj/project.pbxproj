@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0E64612153AD84400E8EADC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E64611153AD84400E8EADC /* UIKit.framework */; };
+		D0E64614153AD84400E8EADC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E64613153AD84400E8EADC /* Foundation.framework */; };
+		D0E64616153AD84400E8EADC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E64615153AD84400E8EADC /* CoreGraphics.framework */; };
+		D0E6461C153AD84400E8EADC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E6461A153AD84400E8EADC /* InfoPlist.strings */; };
+		D0E6461E153AD84400E8EADC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6461D153AD84400E8EADC /* main.m */; };
+		D0E64622153AD84400E8EADC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64621153AD84400E8EADC /* AppDelegate.m */; };
+		D0E6462A153AD84500E8EADC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E64629153AD84500E8EADC /* SenTestingKit.framework */; };
+		D0E6462B153AD84500E8EADC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E64611153AD84400E8EADC /* UIKit.framework */; };
+		D0E6462C153AD84500E8EADC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E64613153AD84400E8EADC /* Foundation.framework */; };
+		D0E64634153AD84500E8EADC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E64632153AD84500E8EADC /* InfoPlist.strings */; };
+		D0E64637153AD84500E8EADC /* OSCTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64636153AD84500E8EADC /* OSCTestTests.m */; };
+		D0E64642153AD95700E8EADC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64641153AD95700E8EADC /* ViewController.m */; };
+		D0E6467F153AEFA400E8EADC /* MutLockArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6464F153AEFA400E8EADC /* MutLockArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64680153AEFA400E8EADC /* MutLockDict.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64651153AEFA400E8EADC /* MutLockDict.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64681153AEFA400E8EADC /* MutNRLockArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64653153AEFA400E8EADC /* MutNRLockArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64682153AEFA400E8EADC /* MutNRLockDict.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64655153AEFA400E8EADC /* MutNRLockDict.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64683153AEFA400E8EADC /* NamedMutLockArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64657153AEFA400E8EADC /* NamedMutLockArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64684153AEFA400E8EADC /* ObjectHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64659153AEFA400E8EADC /* ObjectHolder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64685153AEFA400E8EADC /* VVAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6465B153AEFA400E8EADC /* VVAssertionHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64686153AEFA400E8EADC /* VVStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6465E153AEFA400E8EADC /* VVStopwatch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64687153AEFA400E8EADC /* VVThreadLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64660153AEFA400E8EADC /* VVThreadLoop.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64688153AEFA400E8EADC /* OSCAddressSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64665153AEFA400E8EADC /* OSCAddressSpace.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64689153AEFA400E8EADC /* OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64667153AEFA400E8EADC /* OSCBundle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E6468A153AEFA400E8EADC /* OSCInPort.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6466A153AEFA400E8EADC /* OSCInPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E6468B153AEFA400E8EADC /* OSCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6466C153AEFA400E8EADC /* OSCManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E6468C153AEFA400E8EADC /* OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6466E153AEFA400E8EADC /* OSCMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E6468D153AEFA400E8EADC /* OSCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64670153AEFA400E8EADC /* OSCNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E6468E153AEFA400E8EADC /* OSCOutPort.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64672153AEFA400E8EADC /* OSCOutPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E6468F153AEFA400E8EADC /* OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64674153AEFA400E8EADC /* OSCPacket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64690153AEFA400E8EADC /* OSCStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64676153AEFA400E8EADC /* OSCStringAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64691153AEFA400E8EADC /* OSCValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E64678153AEFA400E8EADC /* OSCValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64692153AEFA400E8EADC /* OSCZeroConfDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6467A153AEFA400E8EADC /* OSCZeroConfDomain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64693153AEFA400E8EADC /* OSCZeroConfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E6467C153AEFA400E8EADC /* OSCZeroConfManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0E64694153AEFA400E8EADC /* VVOSC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0E6467D153AEFA400E8EADC /* VVOSC-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0E6462D153AD84500E8EADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0E64604153AD84400E8EADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E6460C153AD84400E8EADC;
+			remoteInfo = OSCTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0E6460D153AD84400E8EADC /* OSCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E64611153AD84400E8EADC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0E64613153AD84400E8EADC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0E64615153AD84400E8EADC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0E64619153AD84400E8EADC /* OSCTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSCTest-Info.plist"; sourceTree = "<group>"; };
+		D0E6461B153AD84400E8EADC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0E6461D153AD84400E8EADC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0E6461F153AD84400E8EADC /* OSCTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSCTest-Prefix.pch"; sourceTree = "<group>"; };
+		D0E64620153AD84400E8EADC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0E64621153AD84400E8EADC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0E64628153AD84500E8EADC /* OSCTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E64629153AD84500E8EADC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D0E64631153AD84500E8EADC /* OSCTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSCTestTests-Info.plist"; sourceTree = "<group>"; };
+		D0E64633153AD84500E8EADC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0E64635153AD84500E8EADC /* OSCTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCTestTests.h; sourceTree = "<group>"; };
+		D0E64636153AD84500E8EADC /* OSCTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCTestTests.m; sourceTree = "<group>"; };
+		D0E64640153AD95700E8EADC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0E64641153AD95700E8EADC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0E6464E153AEFA400E8EADC /* MutLockArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutLockArray.h; sourceTree = "<group>"; };
+		D0E6464F153AEFA400E8EADC /* MutLockArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutLockArray.m; sourceTree = "<group>"; };
+		D0E64650153AEFA400E8EADC /* MutLockDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutLockDict.h; sourceTree = "<group>"; };
+		D0E64651153AEFA400E8EADC /* MutLockDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutLockDict.m; sourceTree = "<group>"; };
+		D0E64652153AEFA400E8EADC /* MutNRLockArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutNRLockArray.h; sourceTree = "<group>"; };
+		D0E64653153AEFA400E8EADC /* MutNRLockArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutNRLockArray.m; sourceTree = "<group>"; };
+		D0E64654153AEFA400E8EADC /* MutNRLockDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutNRLockDict.h; sourceTree = "<group>"; };
+		D0E64655153AEFA400E8EADC /* MutNRLockDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutNRLockDict.m; sourceTree = "<group>"; };
+		D0E64656153AEFA400E8EADC /* NamedMutLockArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamedMutLockArray.h; sourceTree = "<group>"; };
+		D0E64657153AEFA400E8EADC /* NamedMutLockArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamedMutLockArray.m; sourceTree = "<group>"; };
+		D0E64658153AEFA400E8EADC /* ObjectHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectHolder.h; sourceTree = "<group>"; };
+		D0E64659153AEFA400E8EADC /* ObjectHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectHolder.m; sourceTree = "<group>"; };
+		D0E6465A153AEFA400E8EADC /* VVAssertionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVAssertionHandler.h; sourceTree = "<group>"; };
+		D0E6465B153AEFA400E8EADC /* VVAssertionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVAssertionHandler.m; sourceTree = "<group>"; };
+		D0E6465C153AEFA400E8EADC /* VVBasicMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBasicMacros.h; sourceTree = "<group>"; };
+		D0E6465D153AEFA400E8EADC /* VVStopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVStopwatch.h; sourceTree = "<group>"; };
+		D0E6465E153AEFA400E8EADC /* VVStopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVStopwatch.m; sourceTree = "<group>"; };
+		D0E6465F153AEFA400E8EADC /* VVThreadLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVThreadLoop.h; sourceTree = "<group>"; };
+		D0E64660153AEFA400E8EADC /* VVThreadLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVThreadLoop.m; sourceTree = "<group>"; };
+		D0E64661153AEFA400E8EADC /* VVBasics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBasics.h; sourceTree = "<group>"; };
+		D0E64664153AEFA400E8EADC /* OSCAddressSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCAddressSpace.h; sourceTree = "<group>"; };
+		D0E64665153AEFA400E8EADC /* OSCAddressSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCAddressSpace.m; sourceTree = "<group>"; };
+		D0E64666153AEFA400E8EADC /* OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCBundle.h; sourceTree = "<group>"; };
+		D0E64667153AEFA400E8EADC /* OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCBundle.m; sourceTree = "<group>"; };
+		D0E64668153AEFA400E8EADC /* OSCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCConstants.h; sourceTree = "<group>"; };
+		D0E64669153AEFA400E8EADC /* OSCInPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCInPort.h; sourceTree = "<group>"; };
+		D0E6466A153AEFA400E8EADC /* OSCInPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCInPort.m; sourceTree = "<group>"; };
+		D0E6466B153AEFA400E8EADC /* OSCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCManager.h; sourceTree = "<group>"; };
+		D0E6466C153AEFA400E8EADC /* OSCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCManager.m; sourceTree = "<group>"; };
+		D0E6466D153AEFA400E8EADC /* OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCMessage.h; sourceTree = "<group>"; };
+		D0E6466E153AEFA400E8EADC /* OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCMessage.m; sourceTree = "<group>"; };
+		D0E6466F153AEFA400E8EADC /* OSCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNode.h; sourceTree = "<group>"; };
+		D0E64670153AEFA400E8EADC /* OSCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCNode.m; sourceTree = "<group>"; };
+		D0E64671153AEFA400E8EADC /* OSCOutPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCOutPort.h; sourceTree = "<group>"; };
+		D0E64672153AEFA400E8EADC /* OSCOutPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCOutPort.m; sourceTree = "<group>"; };
+		D0E64673153AEFA400E8EADC /* OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCPacket.h; sourceTree = "<group>"; };
+		D0E64674153AEFA400E8EADC /* OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCPacket.m; sourceTree = "<group>"; };
+		D0E64675153AEFA400E8EADC /* OSCStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCStringAdditions.h; sourceTree = "<group>"; };
+		D0E64676153AEFA400E8EADC /* OSCStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCStringAdditions.m; sourceTree = "<group>"; };
+		D0E64677153AEFA400E8EADC /* OSCValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCValue.h; sourceTree = "<group>"; };
+		D0E64678153AEFA400E8EADC /* OSCValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCValue.m; sourceTree = "<group>"; };
+		D0E64679153AEFA400E8EADC /* OSCZeroConfDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCZeroConfDomain.h; sourceTree = "<group>"; };
+		D0E6467A153AEFA400E8EADC /* OSCZeroConfDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCZeroConfDomain.m; sourceTree = "<group>"; };
+		D0E6467B153AEFA400E8EADC /* OSCZeroConfManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCZeroConfManager.h; sourceTree = "<group>"; };
+		D0E6467C153AEFA400E8EADC /* OSCZeroConfManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCZeroConfManager.m; sourceTree = "<group>"; };
+		D0E6467D153AEFA400E8EADC /* VVOSC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VVOSC-Info.plist"; sourceTree = "<group>"; };
+		D0E6467E153AEFA400E8EADC /* VVOSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVOSC.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0E6460A153AD84400E8EADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E64612153AD84400E8EADC /* UIKit.framework in Frameworks */,
+				D0E64614153AD84400E8EADC /* Foundation.framework in Frameworks */,
+				D0E64616153AD84400E8EADC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E64624153AD84500E8EADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E6462A153AD84500E8EADC /* SenTestingKit.framework in Frameworks */,
+				D0E6462B153AD84500E8EADC /* UIKit.framework in Frameworks */,
+				D0E6462C153AD84500E8EADC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0E64602153AD84400E8EADC = {
+			isa = PBXGroup;
+			children = (
+				D0E6464C153AEFA400E8EADC /* VVBasics */,
+				D0E64662153AEFA400E8EADC /* VVOSC */,
+				D0E64617153AD84400E8EADC /* OSCTest */,
+				D0E6462F153AD84500E8EADC /* OSCTestTests */,
+				D0E64610153AD84400E8EADC /* Frameworks */,
+				D0E6460E153AD84400E8EADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E6460E153AD84400E8EADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6460D153AD84400E8EADC /* OSCTest.app */,
+				D0E64628153AD84500E8EADC /* OSCTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E64610153AD84400E8EADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64611153AD84400E8EADC /* UIKit.framework */,
+				D0E64613153AD84400E8EADC /* Foundation.framework */,
+				D0E64615153AD84400E8EADC /* CoreGraphics.framework */,
+				D0E64629153AD84500E8EADC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0E64617153AD84400E8EADC /* OSCTest */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64640153AD95700E8EADC /* ViewController.h */,
+				D0E64641153AD95700E8EADC /* ViewController.m */,
+				D0E64620153AD84400E8EADC /* AppDelegate.h */,
+				D0E64621153AD84400E8EADC /* AppDelegate.m */,
+				D0E64618153AD84400E8EADC /* Supporting Files */,
+			);
+			path = OSCTest;
+			sourceTree = "<group>";
+		};
+		D0E64618153AD84400E8EADC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64619153AD84400E8EADC /* OSCTest-Info.plist */,
+				D0E6461A153AD84400E8EADC /* InfoPlist.strings */,
+				D0E6461D153AD84400E8EADC /* main.m */,
+				D0E6461F153AD84400E8EADC /* OSCTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E6462F153AD84500E8EADC /* OSCTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64635153AD84500E8EADC /* OSCTestTests.h */,
+				D0E64636153AD84500E8EADC /* OSCTestTests.m */,
+				D0E64630153AD84500E8EADC /* Supporting Files */,
+			);
+			path = OSCTestTests;
+			sourceTree = "<group>";
+		};
+		D0E64630153AD84500E8EADC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64631153AD84500E8EADC /* OSCTestTests-Info.plist */,
+				D0E64632153AD84500E8EADC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E6464C153AEFA400E8EADC /* VVBasics */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6464D153AEFA400E8EADC /* src */,
+				D0E64661153AEFA400E8EADC /* VVBasics.h */,
+			);
+			path = VVBasics;
+			sourceTree = "<group>";
+		};
+		D0E6464D153AEFA400E8EADC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6464E153AEFA400E8EADC /* MutLockArray.h */,
+				D0E6464F153AEFA400E8EADC /* MutLockArray.m */,
+				D0E64650153AEFA400E8EADC /* MutLockDict.h */,
+				D0E64651153AEFA400E8EADC /* MutLockDict.m */,
+				D0E64652153AEFA400E8EADC /* MutNRLockArray.h */,
+				D0E64653153AEFA400E8EADC /* MutNRLockArray.m */,
+				D0E64654153AEFA400E8EADC /* MutNRLockDict.h */,
+				D0E64655153AEFA400E8EADC /* MutNRLockDict.m */,
+				D0E64656153AEFA400E8EADC /* NamedMutLockArray.h */,
+				D0E64657153AEFA400E8EADC /* NamedMutLockArray.m */,
+				D0E64658153AEFA400E8EADC /* ObjectHolder.h */,
+				D0E64659153AEFA400E8EADC /* ObjectHolder.m */,
+				D0E6465A153AEFA400E8EADC /* VVAssertionHandler.h */,
+				D0E6465B153AEFA400E8EADC /* VVAssertionHandler.m */,
+				D0E6465C153AEFA400E8EADC /* VVBasicMacros.h */,
+				D0E6465D153AEFA400E8EADC /* VVStopwatch.h */,
+				D0E6465E153AEFA400E8EADC /* VVStopwatch.m */,
+				D0E6465F153AEFA400E8EADC /* VVThreadLoop.h */,
+				D0E64660153AEFA400E8EADC /* VVThreadLoop.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D0E64662153AEFA400E8EADC /* VVOSC */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64663153AEFA400E8EADC /* FrameworkSrc */,
+				D0E6467E153AEFA400E8EADC /* VVOSC.h */,
+			);
+			path = VVOSC;
+			sourceTree = "<group>";
+		};
+		D0E64663153AEFA400E8EADC /* FrameworkSrc */ = {
+			isa = PBXGroup;
+			children = (
+				D0E64664153AEFA400E8EADC /* OSCAddressSpace.h */,
+				D0E64665153AEFA400E8EADC /* OSCAddressSpace.m */,
+				D0E64666153AEFA400E8EADC /* OSCBundle.h */,
+				D0E64667153AEFA400E8EADC /* OSCBundle.m */,
+				D0E64668153AEFA400E8EADC /* OSCConstants.h */,
+				D0E64669153AEFA400E8EADC /* OSCInPort.h */,
+				D0E6466A153AEFA400E8EADC /* OSCInPort.m */,
+				D0E6466B153AEFA400E8EADC /* OSCManager.h */,
+				D0E6466C153AEFA400E8EADC /* OSCManager.m */,
+				D0E6466D153AEFA400E8EADC /* OSCMessage.h */,
+				D0E6466E153AEFA400E8EADC /* OSCMessage.m */,
+				D0E6466F153AEFA400E8EADC /* OSCNode.h */,
+				D0E64670153AEFA400E8EADC /* OSCNode.m */,
+				D0E64671153AEFA400E8EADC /* OSCOutPort.h */,
+				D0E64672153AEFA400E8EADC /* OSCOutPort.m */,
+				D0E64673153AEFA400E8EADC /* OSCPacket.h */,
+				D0E64674153AEFA400E8EADC /* OSCPacket.m */,
+				D0E64675153AEFA400E8EADC /* OSCStringAdditions.h */,
+				D0E64676153AEFA400E8EADC /* OSCStringAdditions.m */,
+				D0E64677153AEFA400E8EADC /* OSCValue.h */,
+				D0E64678153AEFA400E8EADC /* OSCValue.m */,
+				D0E64679153AEFA400E8EADC /* OSCZeroConfDomain.h */,
+				D0E6467A153AEFA400E8EADC /* OSCZeroConfDomain.m */,
+				D0E6467B153AEFA400E8EADC /* OSCZeroConfManager.h */,
+				D0E6467C153AEFA400E8EADC /* OSCZeroConfManager.m */,
+				D0E6467D153AEFA400E8EADC /* VVOSC-Info.plist */,
+			);
+			path = FrameworkSrc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0E6460C153AD84400E8EADC /* OSCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E6463A153AD84500E8EADC /* Build configuration list for PBXNativeTarget "OSCTest" */;
+			buildPhases = (
+				D0E64609153AD84400E8EADC /* Sources */,
+				D0E6460A153AD84400E8EADC /* Frameworks */,
+				D0E6460B153AD84400E8EADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCTest;
+			productName = OSCTest;
+			productReference = D0E6460D153AD84400E8EADC /* OSCTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0E64627153AD84500E8EADC /* OSCTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E6463D153AD84500E8EADC /* Build configuration list for PBXNativeTarget "OSCTestTests" */;
+			buildPhases = (
+				D0E64623153AD84500E8EADC /* Sources */,
+				D0E64624153AD84500E8EADC /* Frameworks */,
+				D0E64625153AD84500E8EADC /* Resources */,
+				D0E64626153AD84500E8EADC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0E6462E153AD84500E8EADC /* PBXTargetDependency */,
+			);
+			name = OSCTestTests;
+			productName = OSCTestTests;
+			productReference = D0E64628153AD84500E8EADC /* OSCTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0E64604153AD84400E8EADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D0E64607153AD84400E8EADC /* Build configuration list for PBXProject "OSCTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0E64602153AD84400E8EADC;
+			productRefGroup = D0E6460E153AD84400E8EADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E6460C153AD84400E8EADC /* OSCTest */,
+				D0E64627153AD84500E8EADC /* OSCTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0E6460B153AD84400E8EADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E6461C153AD84400E8EADC /* InfoPlist.strings in Resources */,
+				D0E64694153AEFA400E8EADC /* VVOSC-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E64625153AD84500E8EADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E64634153AD84500E8EADC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0E64626153AD84500E8EADC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0E64609153AD84400E8EADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E6461E153AD84400E8EADC /* main.m in Sources */,
+				D0E64622153AD84400E8EADC /* AppDelegate.m in Sources */,
+				D0E64642153AD95700E8EADC /* ViewController.m in Sources */,
+				D0E6467F153AEFA400E8EADC /* MutLockArray.m in Sources */,
+				D0E64680153AEFA400E8EADC /* MutLockDict.m in Sources */,
+				D0E64681153AEFA400E8EADC /* MutNRLockArray.m in Sources */,
+				D0E64682153AEFA400E8EADC /* MutNRLockDict.m in Sources */,
+				D0E64683153AEFA400E8EADC /* NamedMutLockArray.m in Sources */,
+				D0E64684153AEFA400E8EADC /* ObjectHolder.m in Sources */,
+				D0E64685153AEFA400E8EADC /* VVAssertionHandler.m in Sources */,
+				D0E64686153AEFA400E8EADC /* VVStopwatch.m in Sources */,
+				D0E64687153AEFA400E8EADC /* VVThreadLoop.m in Sources */,
+				D0E64688153AEFA400E8EADC /* OSCAddressSpace.m in Sources */,
+				D0E64689153AEFA400E8EADC /* OSCBundle.m in Sources */,
+				D0E6468A153AEFA400E8EADC /* OSCInPort.m in Sources */,
+				D0E6468B153AEFA400E8EADC /* OSCManager.m in Sources */,
+				D0E6468C153AEFA400E8EADC /* OSCMessage.m in Sources */,
+				D0E6468D153AEFA400E8EADC /* OSCNode.m in Sources */,
+				D0E6468E153AEFA400E8EADC /* OSCOutPort.m in Sources */,
+				D0E6468F153AEFA400E8EADC /* OSCPacket.m in Sources */,
+				D0E64690153AEFA400E8EADC /* OSCStringAdditions.m in Sources */,
+				D0E64691153AEFA400E8EADC /* OSCValue.m in Sources */,
+				D0E64692153AEFA400E8EADC /* OSCZeroConfDomain.m in Sources */,
+				D0E64693153AEFA400E8EADC /* OSCZeroConfManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E64623153AD84500E8EADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E64637153AD84500E8EADC /* OSCTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0E6462E153AD84500E8EADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E6460C153AD84400E8EADC /* OSCTest */;
+			targetProxy = D0E6462D153AD84500E8EADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0E6461A153AD84400E8EADC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0E6461B153AD84400E8EADC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0E64632153AD84500E8EADC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0E64633153AD84500E8EADC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0E64638153AD84500E8EADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0E64639153AD84500E8EADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0E6463B153AD84500E8EADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCTest/OSCTest-Prefix.pch";
+				INFOPLIST_FILE = "OSCTest/OSCTest-Info.plist";
+				OTHER_CFLAGS = "-DIPHONE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0E6463C153AD84500E8EADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCTest/OSCTest-Prefix.pch";
+				INFOPLIST_FILE = "OSCTest/OSCTest-Info.plist";
+				OTHER_CFLAGS = "-DIPHONE";
+				OTHER_CPLUSPLUSFLAGS = "-DIPHONE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D0E6463E153AD84500E8EADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSCTest.app/OSCTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCTest/OSCTest-Prefix.pch";
+				INFOPLIST_FILE = "OSCTestTests/OSCTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D0E6463F153AD84500E8EADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSCTest.app/OSCTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCTest/OSCTest-Prefix.pch";
+				INFOPLIST_FILE = "OSCTestTests/OSCTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0E64607153AD84400E8EADC /* Build configuration list for PBXProject "OSCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E64638153AD84500E8EADC /* Debug */,
+				D0E64639153AD84500E8EADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E6463A153AD84500E8EADC /* Build configuration list for PBXNativeTarget "OSCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E6463B153AD84500E8EADC /* Debug */,
+				D0E6463C153AD84500E8EADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0E6463D153AD84500E8EADC /* Build configuration list for PBXNativeTarget "OSCTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E6463E153AD84500E8EADC /* Debug */,
+				D0E6463F153AD84500E8EADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0E64604153AD84400E8EADC /* Project object */;
+}
